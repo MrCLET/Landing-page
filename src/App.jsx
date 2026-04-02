@@ -1,22 +1,22 @@
-import { useState } from "react";
+
+import NavBar from './components/NavBar.jsx'
+import { ExploreDiscoverBuy ,FeturedProperties} from './components/Explore&Fetured.jsx'
 
 
 function App() {
   // state (variable React)
-  const [count, setCount] = useState(0);
-  let name = "Clement"
 
   return (
-    <div>
-      <h1 className="title" >Bonjour React {name} 👋</h1>
-
-      <p>Tu as cliqué {count} fois</p>
-
-      <button onClick={() => setCount(count + 1)}>
-        Clique-moi 
-      </button>
+    <div className="">
+        <div className="bg-[#f1f1f1] text-gray-900 p-10 px-20 min-h-screen">
+          <NavBar />
+          <ExploreDiscoverBuy />
+          <FeturedProperties />
+        </div>
     </div>
-  );
+  )
 }
+
+
 
 export default App;

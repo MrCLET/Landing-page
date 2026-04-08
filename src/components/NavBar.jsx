@@ -6,7 +6,7 @@ function NavBar() {
                 <div className="hallContainer w-full ">
                     <div className="  w-20 h-12 shrink-0">
                         <a href="">
-                        <img className="w-auto h-full" alt="HOHAYA" src="images/IMG_7352.PNG" />
+                        <img className="w-auto h-full" alt="HOHAYA" src="./src/images/IMG_7352.PNG" />
                         </a>
                     </div>
                     <div className="hallContainer ">

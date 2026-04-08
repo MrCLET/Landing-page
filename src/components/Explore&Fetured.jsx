@@ -33,7 +33,7 @@ function ExploreDiscoverBuy() {
                     </div>
                 </div>
                 <div className="mt-6">
-                    <img className="w-full mb-6 h-full object-cover border-solid-gray border-2" alt="HOHAYA" src="images/chambre.jfif" />
+                    <img className="w-full mb-6 h-full object-cover border-solid-gray border-2" alt="HOHAYA" src="./src/images/chambre.jfif" />
                 </div>
                 
             </div>
@@ -75,19 +75,19 @@ function FeturedProperties() {
             {/* FIRST LOT IMAGES*/}
                     <div className="container mt-8 flex gap-6 justify-center items-center py-2">
                             <ImgFrame
-                                src="images/maisonchic-3.png"
+                                src="./src/images/maisonchic-3.png"
                                 title="Akodessewa Beach Villa"
                                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nihil veritatis provident eum in.."
                                 price="$489,000"
                             />
                             <ImgFrame
-                                src="images/imagesA.jpg"
+                                src="./src/images/imagesA.jpg"
                                 title="Tokoin Boulevard Villa"
                                 description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, necessitatibus."
                                 price="$846,000"
                             />
                             <ImgFrame
-                                src="images/maisonchic-4.png"
+                                src="./src/images/maisonchic-4.png"
                                 title="Segbe Cms"
                                 description="Lorem ipsum dolor sit amet consectetur adipisicing."
                                 price="$$9173,000"
@@ -96,19 +96,19 @@ function FeturedProperties() {
             {/* SECOND LOT IMAGES*/}
                     <div className="container flex mt-6 justify-between gap-5 ">
                         <ImgFrame
-                            src="images/imagesB.jpg"
+                            src="./src/images/imagesB.jpg"
                             title="Rafiti"
                             description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora beatae dolor et illum!"
                             price="$387,000"
                         />
                         <ImgFrame
-                            src="images/imagesC.jpg"
+                            src="./src/images/imagesC.jpg"
                             title="Dodji Valley Lodge"
                             description="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             price="$745,000"
                         />
                         <ImgFrame
-                            src="images/maisonchic-3.png"
+                            src="./src/images/maisonchic-3.png"
                             title="Clet hill Estate"
                             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, aut? Illo."
                             price="$287,000"

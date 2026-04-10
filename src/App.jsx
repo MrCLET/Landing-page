@@ -1,6 +1,7 @@
 
 import NavBar from './components/NavBar.jsx'
-import  { Explore , Properties ,Testimonials ,AboutUs ,Faq , Footer} from './components/Explore&Fetured.jsx'
+import  { Explore , Properties ,Testimonials ,AboutUs ,Faq } from './components/Contents.jsx'
+import  Footer from './components/Footer.jsx'
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
 
   return (
     <div className="">
-        <div className=" text-gray-900 p-10 px-20 min-h-screen">
+        <div className=" text-gray-900 min-h-screen">
           <NavBar />
           <Explore />
           <Properties />

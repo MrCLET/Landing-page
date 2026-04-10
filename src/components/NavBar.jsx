@@ -1,7 +1,7 @@
 import { react } from "react";
 
 function NavBar() {
-  return <div className="">
+  return <div className=" bg-[#f1f1f1] justify-center items-center" >
             {/*NAVBAR */}
                 <div className="hallContainer w-full ">
                     <div className="  w-20 h-12 shrink-0">

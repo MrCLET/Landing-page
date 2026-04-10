@@ -9,7 +9,7 @@ function createImage(image) {
             src= {image.imgUrl}
             title= {image.title}
             description= {image.description}
-            price= {image.price}
+            price= { `$ ${image.price}.00`}
         />
     )
 }
@@ -23,7 +23,7 @@ function Explore() {
 {/* CONTAINER Explore. Dicover. Buy */}  
         <section id="Explore">
             {/* CONTENT */}
-            <div className="text-black justify-center pt-4 items-center ">
+            <div className="bg-[#f1f1f1] text-gray-900 items-center p-16  py-10 minh-screen ">
                 <div className="flex w-full mb-auto">
                     <div className=" w-3/4  ">
                         <p className="inline-flex hover:bg-gray-200 items-center bg-white py-1 px-4 text-sm rounded-full"><svg xmlns="http://www.w3.org/2000/svg" className="h-2 w-2 text-black mr-2" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/></svg>Explore. Dicover. Buy</p>
@@ -37,7 +37,7 @@ function Explore() {
                     </div>
                 </div>
                 <div className="mt-6">
-                    <img className="w-full mb-6 h-full object-cover border-solid-gray border-2" alt="HOHAYA" src="./src/images/chambre.jfif" />
+                    <img className="w-full mb-6 h-full object-cover border-solid-gray border-2" alt="HOHAYA" src={images[2].imgUrl} />
                 </div>
                 
             </div>
@@ -51,7 +51,7 @@ function Properties() {
     return (
         <div classNameName="">
 {/*PROPERTIES & GALERIE */} 
-            <section id="properties" className=" w-full my-14 mb-14" >
+            <section id="properties" className=" w-full mb-14 mb-14 bg-[#f1f1f1] text-gray-900 items-center p-10 px-20 minh-screen" >
                 <div className="flex w-full mb-4">
                     <div className="w-3/4 mb-10">
                         <p className="inline-flex hover:bg-gray-200 items-center bg-white py-1 px-4 text-sm rounded-full"><svg xmlns="http://www.w3.org/2000/svg" className="h-2 w-2 text-black mr-2" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/></svg>Fetured Properties</p>
@@ -83,34 +83,23 @@ function Properties() {
                             };
                             {
                                 createImage(images[2])
+                            };
+                            {
+                                createImage(images[3])
                             }
-                            <ImgFrame
-                                src="./src/images/maisonchic-4.png"
-                                title="Segbe Cms"
-                                description="Lorem ipsum dolor sit amet consectetur adipisicing."
-                                price="$9173,000"
-                            />
+                            
                         </div>
             {/* SECOND LOT IMAGES*/}
                     <div className="container flex mt-6 justify-between gap-5 ">
-                        <ImgFrame
-                            src="./src/images/imagesB.jpg"
-                            title="Rafiti"
-                            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora beatae dolor et illum!"
-                            price="$387,000"
-                        />
-                        <ImgFrame
-                            src="./src/images/imagesC.jpg"
-                            title="Dodji Valley Lodge"
-                            description="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                            price="$745,000"
-                        />
-                        <ImgFrame
-                            src="./src/images/maisonchic-3.png"
-                            title="Clet hill Estate"
-                            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, aut? Illo."
-                            price="$287,000"
-                        />
+                            {
+                                createImage(images[4])
+                            };
+                            {
+                                createImage(images[5])
+                            };
+                            {
+                                createImage(images[2])
+                            }
                     </div>
                 </div>
             </section>
@@ -121,7 +110,7 @@ function Properties() {
 // ABOUT US 
 function AboutUs() {
     return(
-         <div className="bg-white py-10 h-150 flex my-4 p-16 gap-6">
+         <div className="bg-white h-150 flex my-4 p-16  py-10 gap-6">
                 <div className="w-1/2">
                     <p className="inline-flex text-gray-900 hover:bg-gray-200  items-center bg-[#f1f1f1] py-1 px-4 text-sm rounded-full"><svg xmlns="http://www.w3.org/2000/svg" className="h-2 w-2 text-gray-900 mr-2" fill="currentColor" viewBox="0 0 24 24">
                     <circle cx="12" cy="12" r="12"/></svg>About Us</p>
@@ -317,25 +306,9 @@ function Faq() {
     )
 }
 
-//FOOTER
-function Footer() {
-    return(
-        <footer class="bg-gray-200">
-            <div class="">
-                <img class="w-full" src="images/imagesFooter.png" alt="" />
-            </div>
-            <div class="flex mx-6 py-4 text-sm text-gray-800 justify-left items-center gap-8">
-                <p class="pX-4">© 2025 All rights reserved.</p>
-                <p class="pX-4">PrivacyPolicy</p>
-                <p class="pX-4">Terms of Service</p>
-                <p class="pX-4">Cookies Settings</p>
-            </div>
-        </footer>
-    )
-}
 
 
 
 
 
-export { Explore , Properties ,Testimonials ,AboutUs, Faq, Footer}
+export { Explore , Properties ,Testimonials ,AboutUs, Faq}
